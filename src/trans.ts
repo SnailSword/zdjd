@@ -3,7 +3,7 @@ import { Base64 } from 'js-base64'
 const b64 = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ+/='
 
 const leftEye = ['o', '0', 'O', 'Ö'];
-const mouse = ['w', 'v', '\.', '_'];
+const mouth = ['w', 'v', '\.', '_'];
 const rightEye = ['o', '0', 'O', 'Ö'];
 const table: string[] = []
 
@@ -13,7 +13,7 @@ const makeTable = () => {
   for (let i = 0; i < 4; i++) {
     for (let j = 0; j < 4; j++) {
       for (let k = 0; k < 4; k++) {
-        table.push(`${leftEye[i]}${mouse[j]}${rightEye[k]}`);
+        table.push(`${leftEye[i]}${mouth[j]}${rightEye[k]}`);
       }
     }
   }
